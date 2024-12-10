@@ -8,7 +8,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  version-bump:
+  testing-stuff:
     name: 🆕 Version bump
     runs-on: ubuntu-latest
     timeout-minutes: 10
