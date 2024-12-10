@@ -1,0 +1,15 @@
+name: effect action
+description: Just testing some stuff
+
+inputs:
+  yolo:
+    description: yolo bro
+    default: ''
+
+runs:
+  using: node22
+  main: ./lib/main.js
+
+branding:
+  icon: target
+  color: red

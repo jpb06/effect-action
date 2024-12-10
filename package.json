@@ -1,0 +1,36 @@
+{
+  "name": "effect-action",
+  "description": ".",
+  "version": "1.0.0",
+  "main": "lib/main.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpb06/effect-action.git"
+  },
+  "author": "jpb06 <jpb.06@outlook.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "update-deps": "bunx npm-check-updates --root --format group -i",
+    "clean-dist": "rm -rf ./dist && rm -rf ./lib",
+    "build": "bun clean-dist && esbuild ./src/main.ts --bundle --minify --outfile=./lib/main.js --platform=node",
+    "type-check": "tsc --noEmit",
+    "format": "biome format --write ./src",
+    "format-ci": "biome format ./src",
+    "lint": "biome lint ./src",
+    "lint-fix": "biome lint --write ./src"
+  },
+  "dependencies": {
+    "effect": "^3.11.4",
+    "effect-errors": "^1.7.40"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "22.10.1",
+    "esbuild": "^0.24.0",
+    "typescript": "5.7.2"
+  }
+}
