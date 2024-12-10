@@ -16,7 +16,7 @@
   "scripts": {
     "update-deps": "bunx npm-check-updates --root --format group -i",
     "clean-dist": "rm -rf ./dist && rm -rf ./lib",
-    "build": "bun clean-dist && esbuild ./src/main.ts --bundle --minify --outfile=./lib/main.js --platform=node",
+    "build": "bun clean-dist && esbuild ./src/main.ts --bundle --tsconfig=tsconfig.prod.json --minify --outfile=./lib/main.js --platform=node",
     "type-check": "tsc --noEmit",
     "format": "biome format --write ./src",
     "format-ci": "biome format ./src",

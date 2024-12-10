@@ -9,7 +9,7 @@ concurrency:
 
 jobs:
   testing-stuff:
-    name: 🆕 Version bump
+    name: 🆕 Testing stuff
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
