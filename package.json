@@ -16,7 +16,7 @@
   "scripts": {
     "update-deps": "bunx npm-check-updates --root --format group -i",
     "clean-dist": "rm -rf ./dist && rm -rf ./lib",
-    "build": "bun clean-dist && esbuild ./src/main.ts --bundle --tsconfig=tsconfig.prod.json --minify --outfile=./lib/main.js --platform=node",
+    "build": "bun clean-dist && esbuild ./src/main.ts --bundle --tsconfig=tsconfig.prod.json --minify --sourcemap --outfile=./lib/main.js --platform=node",
     "postbuild": "echo '{\"type\": \"commonjs\"}' > lib/package.json",
     "type-check": "tsc --noEmit",
     "format": "biome format --write ./src",
@@ -25,12 +25,12 @@
     "lint-fix": "biome lint --write ./src"
   },
   "dependencies": {
-    "effect": "^3.11.4",
-    "effect-errors": "^1.7.40"
+    "effect": "^3.11.7",
+    "effect-errors": "^1.7.44"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "@types/node": "22.10.1",
+    "@types/node": "22.10.2",
     "esbuild": "^0.24.0",
     "typescript": "5.7.2"
   }

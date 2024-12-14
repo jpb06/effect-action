@@ -39,7 +39,8 @@
 		// alias
 		"rootDir": "./src",
 		"paths": {
-			"@effects/console": ["./src/effects/console/index.ts"]
+			"@effects/fs/*": ["./src/effects/fs/*"],
+			"@effects/logger": ["./src/effects/logger/index.ts"]
 		}
 	}
 }
