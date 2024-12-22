@@ -14,7 +14,7 @@
     "node": "22.x"
   },
   "scripts": {
-    "update-deps": "bunx npm-check-updates --root --format group -i",
+    "update-deps": "taze -I",
     "clean-dist": "rm -rf ./dist && rm -rf ./lib",
     "build": "bun clean-dist && esbuild ./src/main.ts --bundle --tsconfig=tsconfig.prod.json --minify --sourcemap --outfile=./lib/main.js --platform=node",
     "postbuild": "echo '{\"type\": \"commonjs\"}' > lib/package.json",
@@ -25,13 +25,14 @@
     "lint-fix": "biome lint --write ./src"
   },
   "dependencies": {
-    "effect": "^3.11.7",
-    "effect-errors": "^1.7.44"
+    "effect": "^3.11.9",
+    "effect-errors": "^1.8.0"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "@types/node": "22.10.2",
-    "esbuild": "^0.24.0",
+    "esbuild": "^0.24.2",
+    "taze": "^0.18.0",
     "typescript": "5.7.2"
   }
 }
