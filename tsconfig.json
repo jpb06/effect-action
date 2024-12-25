@@ -40,7 +40,8 @@
 		"rootDir": "./src",
 		"paths": {
 			"@effects/fs/*": ["./src/effects/fs/*"],
-			"@effects/logger": ["./src/effects/logger/index.ts"]
+			"@effects/logger": ["./src/effects/logger/index.ts"],
+			"@errors": ["./src/errors/index.ts"]
 		}
 	}
 }

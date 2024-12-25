@@ -22,6 +22,8 @@ export const collectErrorDetails = <E>(cause: Cause<E>) =>
       });
 
       yield* error(message);
+
+      yield* Effect.fail(cause);
     }),
     Effect.scoped,
     Effect.provide(Layer.mergeAll(FetchHttpClient.layer, NodeFileSystem.layer)),
