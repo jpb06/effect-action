@@ -23,7 +23,7 @@ export const collectErrorDetails = <E>(cause: Cause<E>) =>
 
       yield* error(message);
 
-      yield* Effect.fail(cause);
+      yield* Effect.fail('worflow failure');
     }),
     Effect.scoped,
     Effect.provide(Layer.mergeAll(FetchHttpClient.layer, NodeFileSystem.layer)),
