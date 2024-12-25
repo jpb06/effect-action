@@ -1,0 +1,25 @@
+name: ⚡ Success
+
+on:
+  push:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  success:
+    name: 🎯 Success
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🧑‍🔬 Calling local action
+        id: effect-action
+        uses: ./
+        with:
+          fail-error-type: ''

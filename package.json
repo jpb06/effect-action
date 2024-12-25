@@ -23,9 +23,14 @@
     "format-ci": "biome format ./src",
     "lint": "biome lint ./src",
     "lint-fix": "biome lint --write ./src",
-    "run-local": "bun run build && act -P ubuntu-latest=-self-hosted"
+    "run-local": "bun run build && act -P ubuntu-latest=-self-hosted --job",
+    "run-success": "bun run-local -- success",
+    "run-main-task": "bun run-local -- main-task-failure",
+    "run-sub-task": "bun run-local -- sub-task-failure",
+    "sync-icons": "bun generateReadmeIcons -h 50"
   },
   "dependencies": {
+    "@actions/core": "^1.11.1",
     "effect": "3.12.0",
     "effect-errors": "1.8.1"
   },
@@ -33,6 +38,7 @@
     "@biomejs/biome": "1.9.4",
     "@types/node": "22.10.2",
     "esbuild": "0.24.2",
+    "readme-package-icons": "^1.1.16",
     "taze": "0.18.0",
     "typescript": "5.7.2"
   }

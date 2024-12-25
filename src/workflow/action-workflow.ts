@@ -1,14 +1,28 @@
 import { Effect, pipe } from 'effect';
 
-import { LoggerConsoleLive } from '@effects/logger';
+import { collectErrorDetails } from '@effect/error-reporting';
+import { Logger, LoggerConsoleLive } from '@effects/logger';
+import { getInputs } from '@inputs';
 
-import { collectErrorDetails } from './errors/collect-error-details.js';
-import { task } from './task/task.js';
+import { mainTask } from './task/index.js';
+
+export const starter = pipe(
+  Effect.gen(function* () {
+    const { info } = yield* Logger;
+
+    yield* info('🎬 Starting effect-action workflow ...');
+
+    const { failErrorType } = yield* getInputs;
+
+    yield* mainTask(failErrorType);
+  }),
+  Effect.withSpan('started'),
+);
 
 export const actionWorkflow = () =>
   Effect.runPromise(
     pipe(
-      task,
+      starter,
       Effect.sandbox,
       Effect.catchAll(collectErrorDetails),
       Effect.provide(LoggerConsoleLive),

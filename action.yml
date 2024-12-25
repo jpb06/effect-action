@@ -1,9 +1,9 @@
 name: effect action
-description: Just testing some stuff
+description: A template for a github action with error reporning, using effect.
 
 inputs:
-  yolo:
-    description: yolo bro
+  fail-error-type:
+    description: The error type that should be raised, if any
     default: ''
 
 runs:
