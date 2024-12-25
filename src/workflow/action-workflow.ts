@@ -16,7 +16,7 @@ export const starter = pipe(
 
     yield* mainTask(failErrorType);
   }),
-  Effect.withSpan('started'),
+  Effect.withSpan('starter'),
 );
 
 export const actionWorkflow = () =>
