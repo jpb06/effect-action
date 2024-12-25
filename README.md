@@ -22,7 +22,9 @@ You can take a look at the three sample workflows:
 
 ## ⚡ Usage
 
-To pretty print the error and display a usage stack tract, we must collect the `cause` using `Effect.catchAll` and use `captureErrors` from [effect-errors](https://github.com/jpb06/effect-errors). This function will use source maps if present to resolve sources location. We can then use `prettyPrintFromCapturedErrors` function to display the error details.
+To pretty print the error and display a stack trace that is actually useful, we must collect the `cause` using `Effect.catchAll` and use `captureErrors` from [effect-errors](https://github.com/jpb06/effect-errors).
+
+This function will use source maps if present to resolve sources location. We can then use `prettyPrintFromCapturedErrors` function to display the error details.
 
 ```ts
 import { FetchHttpClient } from '@effect/platform';
