@@ -14,7 +14,7 @@
     "node": "22.x"
   },
   "scripts": {
-    "update-deps": "taze -f -I",
+    "update-deps": "bun npm-check-updates --root --format group -i",
     "clean-dist": "rm -rf ./dist && rm -rf ./lib",
     "build": "bun clean-dist && esbuild ./src/main.ts --bundle --tsconfig=tsconfig.prod.json --minify --sourcemap --outfile=./lib/main.js --platform=node",
     "postbuild": "echo '{\"type\": \"commonjs\"}' > lib/package.json",
@@ -30,16 +30,16 @@
     "sync-icons": "bun generateReadmeIcons -h 50"
   },
   "dependencies": {
-    "@actions/core": "^1.11.1",
-    "effect": "3.12.0",
-    "effect-errors": "1.8.1"
+    "@actions/core": "1.11.1",
+    "effect": "3.12.5",
+    "effect-errors": "1.8.16"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@types/node": "22.10.2",
+    "@types/node": "22.10.7",
     "esbuild": "0.24.2",
-    "readme-package-icons": "^1.1.16",
-    "taze": "0.18.0",
-    "typescript": "5.7.2"
+    "npm-check-updates": "^17.1.14",
+    "readme-package-icons": "1.1.16",
+    "typescript": "5.7.3"
   }
 }
