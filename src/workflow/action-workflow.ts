@@ -4,6 +4,7 @@ import { collectErrorDetails } from '@effect/error-reporting';
 import { Logger, LoggerConsoleLive } from '@effects/logger';
 import { getInputs } from '@inputs';
 
+import { loadEnv } from '../effects/env/load-env.js';
 import { mainTask } from './task/index.js';
 
 export const starter = pipe(
@@ -11,6 +12,9 @@ export const starter = pipe(
     const { info } = yield* Logger;
 
     yield* info('🎬 Starting effect-action workflow ...');
+
+    const env = yield* loadEnv;
+    yield* info('env', env);
 
     const { failErrorType } = yield* getInputs;
 
