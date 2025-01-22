@@ -31,14 +31,14 @@
   },
   "dependencies": {
     "@actions/core": "1.11.1",
-    "effect": "3.12.5",
-    "effect-errors": "1.8.16"
+    "effect": "3.12.7",
+    "effect-errors": "1.8.20"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@types/node": "22.10.7",
     "esbuild": "0.24.2",
-    "npm-check-updates": "^17.1.14",
+    "npm-check-updates": "17.1.14",
     "readme-package-icons": "1.1.16",
     "typescript": "5.7.3"
   }
