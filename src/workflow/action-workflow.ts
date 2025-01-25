@@ -1,10 +1,10 @@
 import { Effect, pipe } from 'effect';
 
-import { collectErrorDetails } from '@effect/error-reporting';
+import { loadEnv } from '@effects/env';
+import { collectErrorDetails } from '@effects/errors';
 import { Logger, LoggerConsoleLive } from '@effects/logger';
 import { getInputs } from '@inputs';
 
-import { loadEnv } from '../effects/env/load-env.js';
 import { mainTask } from './task/index.js';
 
 export const starter = pipe(
