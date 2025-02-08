@@ -31,15 +31,16 @@
   },
   "dependencies": {
     "@actions/core": "1.11.1",
-    "effect": "3.12.7",
-    "effect-errors": "1.8.23"
+    "@actions/github": "6.0.0",
+    "effect": "3.12.10",
+    "effect-errors": "1.8.32"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@types/node": "22.10.10",
-    "esbuild": "0.24.2",
+    "@types/node": "22.13.1",
+    "esbuild": "0.25.0",
     "npm-check-updates": "17.1.14",
-    "readme-package-icons": "1.1.16",
+    "readme-package-icons": "1.2.0",
     "typescript": "5.7.3"
   }
 }
