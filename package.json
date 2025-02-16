@@ -32,12 +32,12 @@
   "dependencies": {
     "@actions/core": "1.11.1",
     "@actions/github": "6.0.0",
-    "effect": "3.12.10",
-    "effect-errors": "1.8.32"
+    "effect": "3.13.1",
+    "effect-errors": "1.8.36"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@types/node": "22.13.1",
+    "@types/node": "22.13.4",
     "esbuild": "0.25.0",
     "npm-check-updates": "17.1.14",
     "readme-package-icons": "1.2.0",
