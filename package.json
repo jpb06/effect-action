@@ -32,8 +32,8 @@
   "dependencies": {
     "@actions/core": "1.11.1",
     "@actions/github": "6.0.0",
-    "effect": "3.13.1",
-    "effect-errors": "1.8.36"
+    "effect": "3.13.2",
+    "effect-errors": "1.8.37"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
