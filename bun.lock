@@ -7,7 +7,7 @@
         "@actions/core": "1.11.1",
         "@actions/github": "6.0.0",
         "effect": "3.13.2",
-        "effect-errors": "1.8.37",
+        "effect-errors": "1.8.40",
       },
       "devDependencies": {
         "@biomejs/biome": "1.9.4",
@@ -48,11 +48,11 @@
 
     "@biomejs/cli-win32-x64": ["@biomejs/cli-win32-x64@1.9.4", "", { "os": "win32", "cpu": "x64" }, "sha512-8Y5wMhVIPaWe6jw2H+KlEm4wP/f7EW3810ZLmDlrEEy5KvBsb9ECEfu/kMWD484ijfQ8+nIi0giMgu9g1UAuuA=="],
 
-    "@effect/platform": ["@effect/platform@0.77.2", "", { "dependencies": { "find-my-way-ts": "^0.1.5", "multipasta": "^0.2.5" }, "peerDependencies": { "effect": "^3.13.2" } }, "sha512-stvroKHJVfjd3XhZJEPUAOgzqu9DH1vnGHIAjfs2ma6Z4qcjVpFXrxa0ZYmwRaWVIFsiADMenkN0I7XrRdAgLw=="],
+    "@effect/platform": ["@effect/platform@0.77.6", "", { "dependencies": { "find-my-way-ts": "^0.1.5", "multipasta": "^0.2.5" }, "peerDependencies": { "effect": "^3.13.6" } }, "sha512-ghhLNyj/UoQvmp2I29nqngMlAzQB72BhjUKcOA58cUPaUUwNy3K2jmUAzdU6SB3RHIObsX44CM/jXZiYfTv59A=="],
 
-    "@effect/platform-node": ["@effect/platform-node@0.73.2", "", { "dependencies": { "@effect/platform-node-shared": "^0.27.2", "mime": "^3.0.0", "undici": "^7.1.0", "ws": "^8.18.0" }, "peerDependencies": { "@effect/platform": "^0.77.2", "effect": "^3.13.2" } }, "sha512-lO9SlcN7/Fpzu5VE/EKMxkmXt0n0vQ+rCirfGL1cNFcax9klw0A6uAJj2UvDRnX+o5YRlWNAgg5AN5uiGDUy0g=="],
+    "@effect/platform-node": ["@effect/platform-node@0.73.6", "", { "dependencies": { "@effect/platform-node-shared": "^0.27.6", "mime": "^3.0.0", "undici": "^7.1.0", "ws": "^8.18.0" }, "peerDependencies": { "@effect/platform": "^0.77.6", "effect": "^3.13.6" } }, "sha512-/j30syUUOnFzydA5Nb2Whdo4ZkotzlsEmM0ZbpBp0jQSYoQy3tdWRHtdJZYaFq8VVhWT5KIINu5jJbsGR0mjsg=="],
 
-    "@effect/platform-node-shared": ["@effect/platform-node-shared@0.27.2", "", { "dependencies": { "@parcel/watcher": "^2.4.1", "multipasta": "^0.2.5" }, "peerDependencies": { "@effect/platform": "^0.77.2", "effect": "^3.13.2" } }, "sha512-U6eXYCOEFTrQSShnzftzLcG4ybauDMLL8uwU7kKS3s6Wzaz7ivALFSVyxgQnaxO3t2QQBePWdd9b3DVsLgiBFw=="],
+    "@effect/platform-node-shared": ["@effect/platform-node-shared@0.27.6", "", { "dependencies": { "@parcel/watcher": "^2.4.1", "multipasta": "^0.2.5" }, "peerDependencies": { "@effect/platform": "^0.77.6", "effect": "^3.13.6" } }, "sha512-OqWm0OQFeIQ+49oel3rX+tKOhrA7uKZPrRgyD5fupNfXtXRRu15Q/Jnaeq+5H3PUOIi03DR+CqD+JZnq52/NjA=="],
 
     "@effect/schema": ["@effect/schema@0.75.5", "", { "dependencies": { "fast-check": "^3.21.0" }, "peerDependencies": { "effect": "^3.9.2" } }, "sha512-TQInulTVCuF+9EIbJpyLP6dvxbQJMphrnRqgexm/Ze39rSjfhJuufF7XvU3SxTgg3HnL7B/kpORTJbHhlE6thw=="],
 
@@ -186,7 +186,7 @@
 
     "effect": ["effect@3.13.2", "", { "dependencies": { "@standard-schema/spec": "^1.0.0", "fast-check": "^3.23.1" } }, "sha512-/w+CPqHDJ33Wq7xC4YKAchrEEPtjvxh563xH9kDTZp99seNYBoBs87vl8DJwartEjj+KLQLP8PzoDne+XmGT2A=="],
 
-    "effect-errors": ["effect-errors@1.8.37", "", { "dependencies": { "@effect/platform": "0.77.2", "@effect/platform-node": "0.73.2", "@effect/schema": "0.75.5", "comment-json": "4.2.5", "effect": "3.13.2", "picocolors": "1.1.1", "source-map-js": "1.2.1" } }, "sha512-EMyP7hKWQslYaKOizwY2L2plFBRNHTbuv04oE22XFM5KwDDexehhCODzoFiSVkuAe8ynS212Ey9ncHImh98GGg=="],
+    "effect-errors": ["effect-errors@1.8.40", "", { "dependencies": { "@effect/platform": "0.77.6", "@effect/platform-node": "0.73.6", "@effect/schema": "0.75.5", "comment-json": "4.2.5", "effect": "3.13.6", "picocolors": "1.1.1", "source-map-js": "1.2.1" } }, "sha512-1bpKXtbZnCpH5jtRFs9j4v+32+sVnnU7bshfUC8X6sdx+WdUQoh+OyjCbTHyFwe2DpMzEz7n+39eBmJgOrdQOQ=="],
 
     "emoji-regex": ["emoji-regex@8.0.0", "", {}, "sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A=="],
 
@@ -273,6 +273,8 @@
     "@octokit/plugin-paginate-rest/@octokit/types": ["@octokit/types@12.6.0", "", { "dependencies": { "@octokit/openapi-types": "^20.0.0" } }, "sha512-1rhSOfRa6H9w4YwK0yrf5faDaDTb+yLyBUKOCV4xtCDB5VmIPqd/v9yr9o6SAzOAlRxMiRiCic6JVM1/kunVkw=="],
 
     "@octokit/plugin-rest-endpoint-methods/@octokit/types": ["@octokit/types@12.6.0", "", { "dependencies": { "@octokit/openapi-types": "^20.0.0" } }, "sha512-1rhSOfRa6H9w4YwK0yrf5faDaDTb+yLyBUKOCV4xtCDB5VmIPqd/v9yr9o6SAzOAlRxMiRiCic6JVM1/kunVkw=="],
+
+    "effect-errors/effect": ["effect@3.13.6", "", { "dependencies": { "@standard-schema/spec": "^1.0.0", "fast-check": "^3.23.1" } }, "sha512-NKmzyIuOb2UuHFPRz9EYScbhMBxXkzjPRuu+4axE+hMk1f0U7TZxzi2CP3TVVxA2kzvh00aBQEbyH7Opq4PnWg=="],
 
     "@octokit/plugin-paginate-rest/@octokit/types/@octokit/openapi-types": ["@octokit/openapi-types@20.0.0", "", {}, "sha512-EtqRBEjp1dL/15V7WiX5LJMIxxkdiGJnabzYx5Apx4FkQIFgAfKumXeYAqqJCj1s+BMX4cPFIFC4OLCR6stlnA=="],
 
