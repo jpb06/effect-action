@@ -38,7 +38,7 @@
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@types/node": "22.13.9",
-    "esbuild": "0.25.0",
+    "esbuild": "0.25.1",
     "npm-check-updates": "17.1.15",
     "readme-package-icons": "1.2.0",
     "typescript": "5.8.2"
