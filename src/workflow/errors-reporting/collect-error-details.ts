@@ -4,7 +4,7 @@ import { Effect, Layer, pipe } from 'effect';
 import { captureErrors, prettyPrintFromCapturedErrors } from 'effect-errors';
 import type { Cause } from 'effect/Cause';
 
-import { Logger } from '@effects/logger';
+import { Logger } from '@effects/deps/logger';
 
 export const collectErrorDetails = <E>(cause: Cause<E>) =>
   pipe(
