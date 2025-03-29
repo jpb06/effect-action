@@ -40,10 +40,10 @@
 		"rootDir": "./src",
 		"paths": {
 			"@inputs": ["./src/workflow/inputs/index.ts"],
-			"@effects/env": ["./src/effects/env/load-env.ts"],
+			"@effects/deps/env": ["./src/dependencies/env/load-env.ts"],
+			"@effects/deps/fs/*": ["./src/dependencies/fs/*"],
+			"@effects/deps/logger": ["./src/dependencies/logger/index.ts"],
 			"@effects/errors": ["./src/workflow/errors-reporting/index.ts"],
-			"@effects/fs/*": ["./src/effects/fs/*"],
-			"@effects/logger": ["./src/effects/logger/index.ts"],
 			"@errors": ["./src/workflow/task/errors/index.ts"]
 		}
 	}

@@ -1,8 +1,8 @@
 import { Effect, pipe } from 'effect';
 
-import { loadEnv } from '@effects/env';
+import { loadEnv } from '@effects/deps/env';
+import { Logger, LoggerConsoleLive } from '@effects/deps/logger';
 import { collectErrorDetails } from '@effects/errors';
-import { Logger, LoggerConsoleLive } from '@effects/logger';
 import { getInputs } from '@inputs';
 
 import { mainTask } from './task/index.js';

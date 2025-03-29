@@ -1,6 +1,6 @@
 import { Effect, pipe } from 'effect';
 
-import { Logger } from '@effects/logger';
+import { Logger } from '@effects/deps/logger';
 import type { FailErrorType } from '@inputs';
 
 import { MainTaskError } from './errors/main-task.error.js';
