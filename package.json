@@ -41,6 +41,6 @@
     "esbuild": "0.25.1",
     "npm-check-updates": "17.1.16",
     "readme-package-icons": "1.2.0",
-    "typescript": "5.8.2"
+    "typescript": "5.8.3"
   }
 }
