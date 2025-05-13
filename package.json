@@ -33,7 +33,7 @@
     "@actions/core": "1.11.1",
     "@actions/github": "6.0.0",
     "effect": "3.15.0",
-    "effect-errors": "1.10.5"
+    "effect-errors": "1.10.11"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
