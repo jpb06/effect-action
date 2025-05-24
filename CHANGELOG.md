@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.7](https://github.com/jpb06/effect-action/compare/v1.0.6...v1.0.7) (2025-05-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency effect to v3.15.2 ([#48](https://github.com/jpb06/effect-action/issues/48)) ([d4d9662](https://github.com/jpb06/effect-action/commit/d4d9662cae797be39186ae172cd9ace62347e716))
+* **deps:** update dependency effect to v3.15.4 ([#51](https://github.com/jpb06/effect-action/issues/51)) ([ae2e160](https://github.com/jpb06/effect-action/commit/ae2e1607adae2b5eb85e90fc99262bdd6734b26e))
+
 ## [1.0.6](https://github.com/jpb06/effect-action/compare/v1.0.5...v1.0.6) (2025-05-13)
 
 
