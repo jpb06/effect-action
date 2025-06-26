@@ -32,7 +32,7 @@
   "dependencies": {
     "@actions/core": "1.11.1",
     "@actions/github": "6.0.1",
-    "effect": "3.16.8",
+    "effect": "3.16.10",
     "effect-errors": "1.10.12"
   },
   "devDependencies": {
