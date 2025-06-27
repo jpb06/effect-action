@@ -239,9 +239,9 @@
               ":BLANK_LINE:",
               [":BUN:", ":NODE:"],
               ":BLANK_LINE:",
-              [":PACKAGE:", "!@inputs", "!@effects/errors", "!@errors"],
+              [":PACKAGE:", "!@inputs", "!@effects/**", "!@errors"],
               ":BLANK_LINE:",
-              ["@dependencies/**", "@inputs", "@effects/errors", "@errors"],
+              ["@dependencies/**", "@inputs", "@effects/**", "@errors"],
               ":BLANK_LINE:",
               ":PATH:"
             ]
