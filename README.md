@@ -27,6 +27,7 @@ To pretty print the error and display a stack trace that is actually useful, we 
 This function will use source maps if present to resolve sources location. We can then use `prettyPrintFromCapturedErrors` function to display the error details.
 
 ```ts
+import { setFailed } from '@actions/core';
 import { FetchHttpClient } from '@effect/platform';
 import { NodeFileSystem } from '@effect/platform-node';
 import { Effect, Layer, pipe } from 'effect';
@@ -48,7 +49,7 @@ const collectErrorDetails = <E>(cause: Cause<E>) =>
 
       console.error(message);
 
-      yield* Effect.fail('❌ Github action worflow failure');
+      setFailed('❌ Github action workflow failure');
     }),
     Effect.scoped,
     Effect.provide(Layer.mergeAll(FetchHttpClient.layer, NodeFileSystem.layer)),
