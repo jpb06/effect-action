@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.8](https://github.com/jpb06/effect-action/compare/v1.0.7...v1.0.8) (2025-06-27)
+
+
+### Bug Fixes
+
+* avoid refailing ([#66](https://github.com/jpb06/effect-action/issues/66)) ([d0f659e](https://github.com/jpb06/effect-action/commit/d0f659e3332d3d0e56ee0ba626b5777a559457b5))
+* **deps:** update dependency effect to v3.16.10 ([#61](https://github.com/jpb06/effect-action/issues/61)) ([c9fa6f7](https://github.com/jpb06/effect-action/commit/c9fa6f74ae224ad24555f024552eb6793f05412f))
+* **deps:** update dependency effect-errors to v1.10.13 ([#59](https://github.com/jpb06/effect-action/issues/59)) ([187e9fb](https://github.com/jpb06/effect-action/commit/187e9fb18afdf3ffc3b4cb459904b240088e55e9))
+
 ## [1.0.7](https://github.com/jpb06/effect-action/compare/v1.0.6...v1.0.7) (2025-06-21)
 
 
