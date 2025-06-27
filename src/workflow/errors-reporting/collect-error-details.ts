@@ -1,10 +1,9 @@
 import { FetchHttpClient } from '@effect/platform';
 import { NodeFileSystem } from '@effect/platform-node';
-import { Effect, Layer, pipe } from 'effect';
-import { captureErrors, prettyPrintFromCapturedErrors } from 'effect-errors';
-import type { Cause } from 'effect/Cause';
-
 import { Logger } from '@effects/deps/logger';
+import { Effect, Layer, pipe } from 'effect';
+import type { Cause } from 'effect/Cause';
+import { captureErrors, prettyPrintFromCapturedErrors } from 'effect-errors';
 
 export const collectErrorDetails = <E>(cause: Cause<E>) =>
   pipe(
@@ -20,8 +19,6 @@ export const collectErrorDetails = <E>(cause: Cause<E>) =>
       });
 
       yield* error(message);
-
-      yield* Effect.fail('❌ Github action workflow failure');
     }),
     Effect.scoped,
     Effect.provide(Layer.mergeAll(FetchHttpClient.layer, NodeFileSystem.layer)),
