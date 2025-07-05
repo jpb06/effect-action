@@ -40,7 +40,7 @@
     "@types/node": "24.0.10",
     "esbuild": "0.25.5",
     "npm-check-updates": "18.0.1",
-    "readme-package-icons": "1.2.1",
+    "readme-package-icons": "1.2.2",
     "typescript": "5.8.3"
   }
 }
