@@ -35,6 +35,8 @@ jobs:
 
       - name: 🧑‍🔬 Calling local action
         id: effect-action
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         uses: ./
         with:
           fail-error-type: 'sub-task'
