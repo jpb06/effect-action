@@ -42,9 +42,9 @@
 			"@inputs": ["./src/workflow/inputs/index.ts"],
 			"@effects/deps/env": ["./src/dependencies/env/load-env.ts"],
 			"@effects/deps/fs/*": ["./src/dependencies/fs/*"],
-			"@effects/deps/logger": ["./src/dependencies/logger/index.ts"],
 			"@effects/errors": ["./src/workflow/errors-reporting/index.ts"],
-			"@errors": ["./src/workflow/task/errors/index.ts"]
+			"@errors": ["./src/workflow/task/errors/index.ts"],
+			"@test/mocks": ["./src/tests/mocks/index.ts"]
 		}
 	}
 }

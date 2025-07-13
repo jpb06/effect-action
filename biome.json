@@ -148,7 +148,10 @@
         "useFragmentSyntax": "error",
         "useImportType": {
           "fix": "safe",
-          "level": "error"
+          "level": "error",
+          "options": {
+            "style": "auto"
+          }
         },
         "useLiteralEnumMembers": "error",
         "useNodejsImportProtocol": "error",
@@ -158,7 +161,8 @@
         "useSingleVarDeclarator": "error",
         "useTemplate": {
           "fix": "none",
-          "level": "warn"
+          "level": "warn",
+          "options": {}
         },
         "useArrayLiterals": "error"
       },
@@ -239,9 +243,21 @@
               ":BLANK_LINE:",
               [":BUN:", ":NODE:"],
               ":BLANK_LINE:",
-              [":PACKAGE:", "!@inputs", "!@effects/**", "!@errors"],
+              [
+                ":PACKAGE:",
+                "!@inputs",
+                "!@effects/**",
+                "!@errors",
+                "!@test/mocks"
+              ],
               ":BLANK_LINE:",
-              ["@dependencies/**", "@inputs", "@effects/**", "@errors"],
+              [
+                "@dependencies/**",
+                "@inputs",
+                "@effects/**",
+                "@errors",
+                "@test/mocks"
+              ],
               ":BLANK_LINE:",
               ":PATH:"
             ]

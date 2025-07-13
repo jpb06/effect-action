@@ -1,6 +1,5 @@
-import { Effect, pipe } from 'effect';
+import { Console, Effect, pipe } from 'effect';
 
-import { Logger } from '@effects/deps/logger';
 import type { FailErrorType } from '@inputs';
 
 import { MainTaskError } from './errors/main-task.error.js';
@@ -19,9 +18,7 @@ export const mainTask = (maybeFailErrorType: FailErrorType | null) =>
 
       yield* subTask(maybeFailErrorType);
 
-      const { info } = yield* Logger;
-
-      yield* info('✅ Success!');
+      yield* Console.info('✅ Success!');
     }),
     Effect.withSpan('main-task', { attributes: { maybeFailErrorType } }),
   );

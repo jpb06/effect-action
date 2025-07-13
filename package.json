@@ -23,6 +23,10 @@
     "format-ci": "biome format ./src",
     "lint": "biome lint ./src",
     "lint-fix": "biome lint --write ./src",
+    "test": "vitest",
+    "test-ci": "vitest --coverage --run",
+    "test-dev": "vitest --coverage",
+    "test-coverage": "vitest run --coverage",
     "run-local": "bun run build && act -P ubuntu-latest=-self-hosted --job",
     "run-success": "bun run-local -- success",
     "run-main-task": "bun run-local -- main-task-failure",
@@ -33,14 +37,19 @@
     "@actions/core": "1.11.1",
     "@actions/github": "6.0.1",
     "effect": "3.16.13",
-    "effect-errors": "1.10.14"
+    "effect-errors": "1.10.14",
+    "effect-octokit-layer": "1.13.0"
   },
   "devDependencies": {
     "@biomejs/biome": "2.1.1",
     "@types/node": "24.0.13",
+    "@vitest/coverage-v8": "3.2.4",
     "esbuild": "0.25.6",
     "npm-check-updates": "18.0.1",
     "readme-package-icons": "1.2.2",
-    "typescript": "5.8.3"
+    "typescript": "5.8.3",
+    "vite-tsconfig-paths": "5.1.4",
+    "vitest": "3.2.4",
+    "vitest-mock-extended": "3.1.0"
   }
 }
