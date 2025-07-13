@@ -1,4 +1,6 @@
-import { Effect, pipe } from 'effect';
+import { context as githubContext } from '@actions/github';
+import { Effect, Layer, pipe } from 'effect';
+import { OctokitLayer, OctokitLayerLive } from 'effect-octokit-layer';
 
 import { loadEnv } from '@effects/deps/env';
 import { Logger, LoggerConsoleLive } from '@effects/deps/logger';
@@ -14,7 +16,21 @@ export const starter = pipe(
     yield* info('🎬 Starting effect-action workflow ...');
 
     const env = yield* loadEnv;
-    yield* info('env', env);
+    // yield* info('env', env);
+
+    // yield* info(githubContext);
+
+    const repo = githubContext.repo;
+    const pulls = yield* OctokitLayer.repo(repo).pulls.getAll();
+
+    const maybePull = pulls.find(({ head }) => head.ref === env.githubRefName);
+    if (maybePull) {
+      const number = maybePull.number;
+      const baseRef = maybePull.base.ref;
+      const current = maybePull.head.ref;
+
+      yield* info('Pull request', number, baseRef, current);
+    }
 
     const { failErrorType } = yield* getInputs;
 
@@ -29,7 +45,7 @@ export const actionWorkflow = () =>
       starter,
       Effect.sandbox,
       Effect.catchAll(collectErrorDetails),
-      Effect.provide(LoggerConsoleLive),
+      Effect.provide(Layer.mergeAll(OctokitLayerLive, LoggerConsoleLive)),
       Effect.withSpan('action-workflow'),
     ),
   );
