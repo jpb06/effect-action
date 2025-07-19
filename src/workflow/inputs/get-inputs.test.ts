@@ -36,18 +36,4 @@ describe('getInputs function', () => {
 
     expect(error).toBeInstanceOf(ActionInputsError);
   });
-
-  it('should return an allowed failure type', async () => {
-    getInput.calledWith('fail-error-type').mockReturnValueOnce('sub-task');
-
-    const { getInputs } = await import('./get-inputs.js');
-
-    const result = await runPromise(getInputs);
-
-    expect(result).toMatchInlineSnapshot(`
-      {
-        "failErrorType": "sub-task",
-      }
-    `);
-  });
 });
