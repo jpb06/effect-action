@@ -36,7 +36,7 @@
   "dependencies": {
     "@actions/core": "1.11.1",
     "@actions/github": "6.0.1",
-    "effect": "3.17.7",
+    "effect": "3.17.13",
     "effect-errors": "1.10.15",
     "effect-octokit-layer": "1.13.0"
   },
