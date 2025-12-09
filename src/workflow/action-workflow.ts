@@ -15,7 +15,9 @@ export const starter = pipe(
     const env = yield* loadEnv;
 
     const repo = githubContext.repo;
-    const pulls = yield* OctokitLayer.repo(repo).pulls.getAll('open');
+    const pulls = yield* OctokitLayer.repo(repo).pulls.getAll({
+      state: 'open',
+    });
 
     const maybePull = pulls.find(({ head }) => head.ref === env.githubRefName);
     if (maybePull) {
