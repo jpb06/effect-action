@@ -37,7 +37,7 @@
     "@actions/core": "1.11.1",
     "@actions/github": "6.0.1",
     "effect": "3.18.1",
-    "effect-errors": "1.10.16",
+    "effect-errors": "1.10.17",
     "effect-octokit-layer": "1.13.1"
   },
   "devDependencies": {
