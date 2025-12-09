@@ -38,7 +38,7 @@
     "@actions/github": "6.0.1",
     "effect": "3.19.10",
     "effect-errors": "1.10.17",
-    "effect-octokit-layer": "1.13.1"
+    "effect-octokit-layer": "1.15.1"
   },
   "devDependencies": {
     "@biomejs/biome": "2.3.8",
