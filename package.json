@@ -50,7 +50,7 @@
     "npm-check-updates": "19.1.2",
     "readme-package-icons": "1.2.2",
     "typescript": "5.9.3",
-    "vite-tsconfig-paths": "5.1.4",
+    "vite-tsconfig-paths": "6.0.4",
     "vitest": "4.0.15",
     "vitest-mock-extended": "3.1.0"
   }
