@@ -47,7 +47,7 @@
     "@types/node": "24.6.1",
     "@vitest/coverage-v8": "4.0.15",
     "esbuild": "0.27.1",
-    "npm-check-updates": "19.1.2",
+    "npm-check-updates": "19.3.2",
     "readme-package-icons": "1.2.2",
     "typescript": "5.9.3",
     "vite-tsconfig-paths": "5.1.4",
