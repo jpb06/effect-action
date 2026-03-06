@@ -8,9 +8,7 @@ import { captureErrors, prettyPrintFromCapturedErrors } from 'effect-errors';
 export const collectErrorDetails = <E>(cause: Cause<E>) =>
   pipe(
     Effect.gen(function* () {
-      const captured = yield* captureErrors(cause, {
-        stripCwd: true,
-      });
+      const captured = yield* captureErrors(cause, true);
       const message = prettyPrintFromCapturedErrors(captured, {
         hideStackTrace: true,
         stripCwd: true,
