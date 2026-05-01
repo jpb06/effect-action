@@ -43,7 +43,7 @@
     "effect-octokit-layer": "1.15.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.6",
+    "@biomejs/biome": "2.4.14",
     "@types/node": "25.4.0",
     "@vitest/coverage-v8": "4.0.18",
     "esbuild": "0.27.3",
